@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y nginx
 COPY index.html /var/www/html/
 
 # Expose cổng 80 để truy cập nginx
-EXPOSE 8080
+EXPOSE 80
 
 # Khởi động nginx khi container được khởi chạy
 CMD ["nginx", "-g", "daemon off;"]

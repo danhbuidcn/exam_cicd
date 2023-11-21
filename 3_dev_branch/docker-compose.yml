@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  nginxapp:
+    image: thuong99/nginx_thuongbv:v1
+    container_name: nginx-container
+    ports:
+      - "8080:80"
